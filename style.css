@@ -1,0 +1,91 @@
+body{
+    background-image: url(https://image.freepik.com/free-photo/christmas-background-with-snowflakes-stars-design_1048-13556.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+}
+
+.head{
+    font-family: 'Dancing Script', cursive;
+    color: #949209;
+    font-size: 100px;
+    text-shadow: 0px -1px 2px #fbf5f5, 0px -3px 6px rgb(228 118 12), 0px -6px 12px rgb(247 140 90), 0px -10px 20px rgb(230 117 7), 0px -15px 30px rgb(249 71 71), 0px -21px 42px rgb(247 127 12);
+    animation: effect 2s ease infinite, colorChange 10s linear infinite;
+}
+@keyframes effect {
+    50% {
+    text-shadow: 0px -4px 8px #fdf9f9, 0px -12px 24px rgb(232 121 13), 0px -24px 48px rgb(253 135 78), 0px -40px 80px rgb(228 118 11), 0px -60px 120px rgb(247 64 64), 0px -84px 168px rgb(247 138 34);
+  }  
+    }
+    @keyframes colorChange {
+    to{filter:hue-rotate(360deg)}
+    }
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.block{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.newyear{
+    border: 1px solid green;
+    border-radius: 100%;
+    height: 300px;
+    width: 300px;
+    margin-top: 100px;
+    background-color: rgba(255, 255, 0, 0.096);
+}
+h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    color: #5a4b0a;
+}
+button{
+    margin-left: 650px;
+    padding: 15px;
+}
+h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    color: #5a4b0a;
+}
+.gold{
+    font-size: 120px;
+    font-family: 'Gwendolyn', cursive;
+    color: #AE4CCF;
+}
+.play{
+    background-color: rgba(243, 241, 227, 0.438);
+    border: none;
+    border-radius: 25%;
+    background-image: url(https://img.icons8.com/external-bearicons-gradient-bearicons/64/000000/external-play-call-to-action-bearicons-gradient-bearicons.png);
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+}
+.pause{
+    background-image: url(https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/64/000000/external-pause-multimedia-kiranshastry-gradient-kiranshastry.png);
+}
+
+@media all and (max-width: 800px){
+
+.head{
+    font-size: 70px;
+    margin-left: 20px;
+}
+.gold{
+    font-size: 80px;
+}
+button{
+    margin-left: 130px;
+    padding: 30px;
+}
+}
